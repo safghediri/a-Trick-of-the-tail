@@ -1,0 +1,42 @@
+UDG N-TERMINAL TAIL CHARGE ANALYSIS
+===================================
+
+Purpose
+-------
+Characterize how positive and negative residues are distributed along the UDG
+N-terminal tail and reproduce the residue-charge, NCPR, FCR, and Das-Pappu
+plots.
+
+Input sequence
+--------------
+Save the following as UDG_tail.fasta:
+
+>pdb:A
+MIGQKTLYSFFSPSPARKRHAPSPEPAVQGTGVAGVPEESGDAAAIPAKKAPAGQEEPGTPPSSPLS
+
+Part A: EMBOSS Charge
+---------------------
+1. Open the EMBOSS Charge web tool.
+2. Paste or upload UDG_tail.fasta.
+3. Set the sliding-window length to 5.
+4. Run the calculation and save both the numerical table and plot.
+
+
+Part B: CIDER
+-------------
+1. Open the CIDER web server.
+2. Submit the same FASTA sequence without changing it.
+3. Generate and save:
+   - NCPR (net charge per residue) plot
+   - FCR (fraction of charged residues) plot
+   - Das-Pappu diagram of states
+
+
+Interpretation of the outputs
+-----------------------------
+- NCPR reports the local balance of positive and negative charge.
+- FCR reports the local density of charged residues irrespective of sign.
+- The Das-Pappu plot classifies the sequence according to its fractions of
+  positively and negatively charged residues.
+
+

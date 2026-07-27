@@ -1,0 +1,42 @@
+DELPHI ELECTROSTATIC POTENTIAL CALCULATION
+==========================================
+
+Purpose
+-------
+Calculate the electrostatic potential map of full-length UDG, including its
+N-terminal tail, using the default parameters of the DelPhi Clemson Web Server.
+
+Required file
+-------------
+- UDG_tail.pqr: full-length UDG structure prepared with PDB2PQR
+
+The same UDG_tail.pqr structure is used for the APBS and DelPhi calculations so
+that the two solvers receive identical atomic coordinates, charges, radii, and
+protonation states.
+
+Calculation procedure
+---------------------
+1. Open the DelPhi Clemson Web Server.
+2. Upload UDG_tail.pqr.
+3. Apply the following default settings:
+   - Resolution: 1.0 A
+   - Percent box fill: 70%
+   - Internal dielectric constant: 4.0
+   - External dielectric constant: 80.0
+   - Salt concentration: 0.15 M
+   - Solvent probe radius: 1.4 A
+   - Solver: Linear
+   - Requested energy types: Coulombic, Solvation, and Grid
+4. Run the calculation.
+5. Download:
+   - the electrostatic potential grid or map
+   - the calculated energy results
+   - the server-generated parameter or log files, if available
+6. Rename the potential map descriptively, for example:
+   - UDG_tail_DelPhi_default.phi
+
+Expected output
+---------------
+The main output is the default DelPhi electrostatic potential map for full-
+length UDG with its N-terminal tail. This map can be loaded together with the
+UDG-tail structure in compatible molecular-visualization software.

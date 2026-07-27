@@ -1,0 +1,24 @@
+ELECTROSTATIC MAP VISUALIZATION IN UCSF CHIMERA
+================================================
+
+Purpose
+-------
+Display APBS and DelPhi electrostatic potential maps consistently and compare
+
+Required files
+--------------
+- The matching UDG-tail molecular structure
+- APBS OpenDX maps
+- DelPhi electrostatic potential maps
+
+Procedure
+---------
+1. Open the molecular structure in UCSF Chimera.
+2. Open its matching electrostatic map in Volume Viewer.
+3. Set the Volume Viewer step size to 1.
+4. Display the potential using the same range for every comparison:
+      negative threshold: -10
+      positive threshold: +10
+5. Apply a consistent negative-to-positive color convention to all panels
+   (for example, red for negative and blue for positive).
+
