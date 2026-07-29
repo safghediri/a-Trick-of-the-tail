@@ -10,7 +10,7 @@ All the data are available [here](https://nextcloud.univ-lille.fr/index.php/s/di
 - `8VLR_UNG2.tar.gz`: the 8VLR nucleosome with full UDG
 - `8VLR_UNG2_AAA.tar.gz`: the 8VLR nucleosome with full UDG, the RKR motif being mutated to AAA
 
-Each set contains 1000 predictions (200 seeds * 5 samples), confidences, light pickles as defined on the MassiveFold git repository, the plots of the PAE matrices of the 10 first ranked predictions (more can be computed with [this script](https://github.com/GBLille/MassiveFold/blob/main/src/massivefold/massivefold_plots.py)), JSON files used by AlphaFold3, templates used, alignments and a `ranking.csv` file which contains the main scores for each prediction.
+Each set contains 1000 predictions (200 seeds * 5 samples), confidences, light pickles as defined on the MassiveFold git repository, the plots of the pLDDT scores and PAE matrices of the 10 first ranked predictions (more can be computed with [this script](https://github.com/GBLille/MassiveFold/blob/main/src/massivefold/massivefold_plots.py)), JSON files used by AlphaFold3, templates used, alignments and a `ranking.csv` file which contains the main scores for each prediction.
 
 ## Scripts
 
