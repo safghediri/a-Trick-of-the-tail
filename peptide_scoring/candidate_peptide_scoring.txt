@@ -1,0 +1,81 @@
+CANDIDATE PEPTIDE SCORING PROCEDURE
+===================================
+
+Purpose
+-------
+Rank candidate peptide windows by similarity to the UDG tail motif,
+presence of a central basic motif, net charge, and Ser/Pro enrichment.
+
+Reference and window definition
+-------------------------------
+The reference is the 15-residue UDG-tail window centered on the RKR cluster:
+
+   FSPSPARKRHAPSPE
+
+This corresponds to residues 11-25 of the FASTA sequence supplied with this
+protocol. Candidate sequences must also contain exactly 15 residues and must be
+aligned position by position to this reference.
+
+1. Normalized alignment score
+-----------------------------
+For each of the 15 aligned positions assign:
+
+- +2 for an identical residue
+- +1 for one of these conservative substitutions:
+      R <-> K
+      D <-> E
+      S <-> T
+- -1 for any other substitution
+
+Sum the 15 positional values:
+
+   S_align = sum(position scores)
+
+Normalize the result:
+
+   Score_align_norm = S_align / (2 x 15)
+
+An identical sequence scores 1.0. Negative values indicate strong
+dissimilarity. Because mismatches score -1, the theoretical minimum is -0.5.
+
+2. Central basic-motif score
+----------------------------
+Examine positions 7-11 of the 15-residue candidate window. Search this five-
+residue central region for any contiguous three-residue motif and assign:
+
+- 1.0 if "RKR" is present
+- 0.5 if any of these variants is present:
+      KRK, RRK, RKK, KKR, RRR
+- 0.0 otherwise
+
+Call the result Score_center. If more than one accepted motif occurs, use the
+highest applicable value; do not add motif scores.
+
+3. Charge score
+---------------
+Count residues over the full 15-residue window:
+
+   Charge = (#R + #K) - (#D + #E)
+   Score_charge = Charge / 15
+
+Histidine is not included in this charge definition.
+
+4. Ser/Pro enrichment score
+---------------------------
+Count serine and proline over the full 15-residue window:
+
+   Score_SerPro = (#S + #P) / 15
+
+5. Global score
+---------------
+Combine the four terms:
+
+   Score_global =
+       0.5 x Score_align_norm
+     + 0.3 x Score_center
+     + 0.1 x Score_charge
+     + 0.1 x Score_SerPro
+
+
+
+
