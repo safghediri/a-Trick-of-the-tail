@@ -3,15 +3,12 @@ INPUT PREPARATION WITH PDB2PQR
 
 Purpose
 -------
-Prepare the charge- and radius-assigned structure of full-length UDG, including
+Prepare the charge and radius assigned structure of full length UDG, including
 its N-terminal tail, for electrostatic potential calculations with APBS.
 
 Required input structure
 ------------------------
 - UDG_tail.pdb: complete UDG structure including the N-terminal tail
-
-Before submission, check the structure for missing atoms, alternative atom
-locations, non-standard residue names, and unwanted solvent or ligand molecules.
 
 Procedure
 ---------
