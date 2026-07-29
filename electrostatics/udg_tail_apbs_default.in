@@ -1,0 +1,27 @@
+read
+    mol pqr bvu20nap.pqr
+end
+elec 
+    mg-auto
+    dime 193 193 257
+    cglen 141.6273 130.2183 191.7498
+    fglen 103.3102 96.5990 132.7940
+    cgcent mol 1
+    fgcent mol 1
+    mol 1
+    lpbe
+    bcfl sdh
+    pdie 2.0000
+    sdie 78.5400
+    srfm smol
+    chgm spl2
+    sdens 10.00
+    srad 1.40
+    swin 0.30
+    temp 298.15
+    calcenergy total
+    calcforce no
+    write pot dx bvu20nap.pqr
+end
+print elecEnergy 1 end
+quit
