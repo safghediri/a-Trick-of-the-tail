@@ -56,8 +56,8 @@ def score(peptide):
 
 def main():
     here = Path(__file__).resolve().parent
-    input_path = here / "udg_like_candidates.csv"
-    output_path = here / "udg_like_scores_recomputed.csv"
+    input_path = here / "Data_set.csv"
+    output_path = here / "udg_like_scores.csv"
     scored_rows = []
     skipped = []
 
