@@ -2,6 +2,8 @@
 
 Predictions computed with [AlphaFold3](https://github.com/google-deepmind/alphafold3) through [MassiveFold](https://github.com/GBLille/MassiveFold) 1.6.2.
 
+The predictions were generated using templates, paired and unpaired multiple sequence alignments, 200 seeds and 5 samples for each. MassiveFold was run on A100 and L40S GPUs.
+
 ## Data
 
 All the data are available [here](https://nextcloud.univ-lille.fr/index.php/s/dig6T76WNsY7mpx). The folder contains 4 sets:

@@ -12,7 +12,7 @@ The repository is divided into four sections. Each folder contains a separate RE
 
 The MassiveFold_AlphaFold3 folder contains the files related to the structural predictions performed with AlphaFold3 through MassiveFold.
 
-These calculations include predictions of the nucleosome with the RKR-containing UDG peptide and predictions of the full UDG–nucleosome complex. The folder contains the available input files, predicted structures, ranking information, and analysis procedures.
+These calculations include predictions of the nucleosome with the RKR-containing UDG peptide and predictions of the full UDG–nucleosome complex. The folder contains the available input files, predicted structures, ranking scores and scripts used for the analysis.
 
 ## Electrostatic analysis
 
