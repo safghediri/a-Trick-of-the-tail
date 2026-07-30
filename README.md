@@ -8,25 +8,25 @@ The study investigates whether the positively charged RKR motif in the N-termina
 
 The repository is divided into four sections. Each folder contains a separate README with more detailed information.
 
-MassiveFold and AlphaFold3
+## MassiveFold and AlphaFold3
 
 The MassiveFold_AlphaFold3 folder contains the files related to the structural predictions performed with AlphaFold3 through MassiveFold.
 
 These calculations include predictions of the nucleosome with the RKR-containing UDG peptide and predictions of the full UDG–nucleosome complex. The folder contains the available input files, predicted structures, ranking information, and analysis procedures.
 
-Electrostatic analysis
+## Electrostatic analysis
 
 The electrostatics folder contains the structural models and protocols used to analyse the charge distribution and electrostatic potential of UDG and its N-terminal tail.
 
 The folder includes the PDB2PQR structure-preparation procedure, APBS and DelPhi calculation protocols, EMBOSS/CIDER tail-charge analysis, and the Chimera visualization procedure.
 
-Peptide scoring
+## Peptide scoring
 
 The peptide_scoring folder contains the files used to compare the RKR-containing region of the UDG tail with candidate acidic-patch-binding peptides.
 
 The scoring procedure combines sequence similarity, the presence of a central basic motif, peptide charge, and serine/proline enrichment. The folder contains the scoring protocol, input peptide data, analysis script, and available results.
 
-Coarse-grained polymer simulations
+## Coarse-grained polymer simulations
 
 The polymer_simulation folder contains the DL_POLY files used for the coarse-grained simulations of the UDG N-terminal tail.
 
