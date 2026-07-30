@@ -1,4 +1,4 @@
-# A trick of the tail: electrostatic localization of UDG on nucleosomes
+# A trick of the tail
 
 This repository contains the computational data, structural models, input files, scripts, and calculation protocols associated with the study:
 
