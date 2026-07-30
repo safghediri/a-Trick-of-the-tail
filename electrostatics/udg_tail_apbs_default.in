@@ -1,5 +1,5 @@
 read
-    mol pqr bvu20nap.pqr
+    mol pqr udg_tail.pqr
 end
 elec 
     mg-auto
@@ -8,6 +8,8 @@ elec
     fglen 103.3102 96.5990 132.7940
     cgcent mol 1
     fgcent mol 1
+    ion charge 1 conc 0.15 radius 2.0
+	ion charge -1 conc 0.15 radius 2.0
     mol 1
     lpbe
     bcfl sdh
@@ -21,7 +23,7 @@ elec
     temp 298.15
     calcenergy total
     calcforce no
-    write pot dx bvu20nap.pqr
+    write pot dx udg_tail-pot
 end
 print elecEnergy 1 end
 quit
