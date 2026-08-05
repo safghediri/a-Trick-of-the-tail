@@ -18,6 +18,6 @@ Each set contains 1000 predictions (200 seeds * 5 samples), confidences, light p
 
 This folder contains a script used to compute the RMSD between 1EMH and the predictions and two scripts to compute the number of times the arginine anchor (or AAA mutated residues) binds to the acidic patch, one for peptides and one for full UDG. These scripts have to be run on the folders listed before, that contain the predictions (cif files).
 
-## Pymol sessions
+## PyMOL sessions
 
-This folder contains the Pymol sessions that correspond to Figures 4 and 5 in the manuscript.
+This folder contains the PyMol sessions that correspond to Figures 4 and 5 in the manuscript.
