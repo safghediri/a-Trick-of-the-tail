@@ -4,7 +4,9 @@ This folder contains the sequence-based scoring workflow used to identify 15-res
 
 ## Files
 
-`Data_set.csv` - input dataset. Each row contains a UniProt accession and one 15-residue peptide window.
+`Data_set.csv` - input dataset. Each row contains a UniProt accession and one 15-residue peptide window of the 430 reference peptides known to bind with the acidic patch
+
+`Data_set_controls.csv` - input control dataset containing 51,793 unique 15-residue peptide windows extracted from predicted intrinsically disordered regions of reviewed human nuclear proteins. All peptides were charge-matched to the UDG reference peptide (`Q = +2`).
 
 `uniprotkb_reviewed_true_AND_organism_id_2026_09_01.tsv` - UniProtKB dataset of reviewed human nuclear proteins used to generate the nuclear-IDR control peptides.
 
