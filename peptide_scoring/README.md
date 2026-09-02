@@ -6,7 +6,13 @@ This folder contains the sequence-based scoring workflow used to identify 15-res
 
 `Data_set.csv` - input dataset. Each row contains a UniProt accession and one 15-residue peptide window.
 
+`uniprotkb_reviewed_true_AND_organism_id_2026_09_01.tsv` - UniProtKB dataset of reviewed human nuclear proteins used to generate the nuclear-IDR control peptides.
+
 `score_udg_like.py` - Python script that calculates the component scores and the final score.
+
+`nuclear_idr_controls.csv` - charge-matched (`Q = +2`) nuclear-IDR control peptides and their UDG-motif similarity scores.
+
+`percentile_fig.png` - comparison of the nuclear-IDR control-score distribution with the acidic-patch-binding reference-peptide scores.
 
 `udg_like_scores.csv` - scored output table generated from the input dataset.
 
